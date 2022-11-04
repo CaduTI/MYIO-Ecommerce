@@ -1,0 +1,112 @@
+$roxo: #6c25be;
+$cinza-escuro: #Bfbebf;
+
+
+section{
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  padding: 50px;
+
+}
+
+
+.titulo{
+  color: $roxo;
+}
+
+h5{
+  color: $cinza-escuro;
+}
+
+.botao{
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.botao .radio{
+  padding-left: 0px;
+  cursor: pointer;
+}
+
+
+.radio{
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  border: 2px solid $roxo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.radio:before{
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: $roxo;
+  border-radius: 50%;
+  opacity: 0;
+
+
+}
+
+.radio:checked:before{
+  opacity: 1;
+}
+
+.radio:focus{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.campos{
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border-width: thin;
+  border-left-width: thin;
+  border-right-width: thin;
+  border-top-width: thin;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.email{
+  width: 515px;
+  height: 25px;
+  border-radius: 5px;
+  border-width: thin;
+  border-left-width: thin;
+  border-right-width: thin;
+  border-top-width: thin;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.termos {
+  margin-top: 30px;
+}
+
+.entrar{
+  cursor: pointer;
+  font-size: 20px;
+  background: $roxo;
+  border-radius: 5px;
+  width: 20%;
+  height: 30px;
+  border: 0;
+  margin-bottom: 5px;
+  color: #ffffff;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}

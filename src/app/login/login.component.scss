@@ -1,0 +1,64 @@
+$roxo: #6c25be;
+$cinza-claro: #555550;
+$branco: #ffffff;
+
+
+
+section{
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  padding: 50px;
+}
+
+.titulo{
+  color: $roxo;
+  box-align: "center";
+  margin-block-end: 50px;
+}
+
+table{
+  width: 100%;
+}
+
+.entrar {
+  cursor: pointer;
+  font-size: 20px;
+  background: $roxo;
+  border-radius: 5px;
+  width: 20%;
+  height: 30px;
+  border: 0;
+  margin-bottom: 5px;
+  color: #ffffff;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+input{
+  width: 20%;
+  height: 30px;
+  border-radius: 4px;
+  border-width: thin;
+  border-left-width: thin;
+  border-right-width: thin;
+  border-top-width: thin;
+  border-bottom-width: thin;
+  display: block;
+
+}
+
+.email{
+  margin-block-end: 10px;
+}
+.texto{
+  color: $cinza-claro;
+}
+
+.cad{
+  color: $roxo;
+  text-decoration: underline;
+}

@@ -1,0 +1,47 @@
+<section>
+  <body>
+    <form>
+      <h1 class="titulo">
+        CRIAR CONTA
+      </h1>
+      <div>
+        <tr>
+          <h5 class="h5" >
+            Tipo de conta
+          </h5>
+          <label class="botao">
+            <input type="radio" name="CPF" value="CPF" checked class="radio" >CPF
+
+            <input type="radio" name="CNPJ" value="CNPJ" class="radio">CNPJ
+          </label>
+        </tr>
+      </div>
+      <div>
+        <tr>
+          <input class="campos" formControlName="Nome completo" placeholder="Nome completo">
+          <input class="campos" formControlName="CPF" placeholder="CPF">
+        </tr>
+        <tr>
+          <input class="campos" formControlName="Data de nascimento" placeholder="Data de nascimento">
+          <input class="campos" formControlName="Telefone celular" placeholder="Telefone celular">
+        </tr>
+        <tr>
+          <input class="email" type="email" placeholder="E-mail">
+        </tr>
+        <tr>
+          <input class="campos" type="password" name="senha" placeholder="Senha" placeholder="Crie sua senha">
+          <input class="campos" type="password" placeholder="Confirme sua senha ">
+        </tr>
+      </div>
+      <div>
+        <tr class="termos">
+          <input type="checkbox" name="termos" value="termos" class="termos">
+          Li e estou de acordo com as políticas da empresa e políticas de privacidade.
+        </tr>
+      </div>
+      <div>
+        <tr>
+          <button  class="entrar" type="submit">
+            CONTINUAR
+          </button>
+      </div>

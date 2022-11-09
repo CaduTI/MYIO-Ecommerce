@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'User.apps.UserConfig',
     'Product',
+    'profile',
     # TODO: remover após o desenvolvimento
     'debug_toolbar',
 ]

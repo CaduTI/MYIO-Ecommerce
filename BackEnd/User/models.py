@@ -8,16 +8,19 @@ from utils.validacpf import valida_cpf
 
 
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    birth_date = models.DataField()
+    user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name='Usuário')
+    birth_date = models.DateField(verbose_name='Data de Nascimento')
     cpf = models.CharField(max_length=11)
-    address = models.CharField(max_length=50)
-    address_number = models.CharField(max_length=5)
-    complement = models.CharField(max_length=30)
-    district = models.CharField(max_length=30)
+    phone_number = models.CharField(max_length=11, verbose_name='Número de telefone')
+    email =  models.EmailField(max_length=254) 
+    address = models.CharField(max_length=50, verbose_name='Endereço')
+    address_number = models.CharField(max_length=5, verbose_name='Número de endereço')
+    complement = models.CharField(max_length=30, verbose_name='Complemento')
+    district = models.CharField(max_length=30, verbose_name='Bairro')
     cep = models.CharField(max_length=8)
-    city = models.CharField(max_length=30)
+    city = models.CharField(max_length=30, verbose_name='Cidade')
     state = models.CharField(
+        verbose_name='Estado',
         max_lenght=2,
         default='SP',
         choices=(

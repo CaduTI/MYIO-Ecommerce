@@ -1,0 +1,7 @@
+git push = "empurra" o projeto local para o repositório no github.
+git pull origin 'nome da branch' - atualiza o seu reposi´torio local com a última versão.
+
+git add . = adiciona todos os arquivos que estão em seu repositório  para o commit, caso queira adicionar somente um arquivo, use: "git add README.md"
+git status - verifica quais arquivos vc adicionou com o git add
+
+git commit -m "" = faz o commit de tudo que selecionou, dentro das aspas duplas você coloca a mensagem que descreve o que seu commit vai fazer, por exemplo:"atualização do front end, tela de login refatorada"

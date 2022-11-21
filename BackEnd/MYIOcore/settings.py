@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# crispy_forms
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,10 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms',
-    'User.apps.UserConfig',
+
     'Product',
-    'profile',
+    'User',
+    'Order',
     # TODO: remover após o desenvolvimento
     'debug_toolbar',
 ]

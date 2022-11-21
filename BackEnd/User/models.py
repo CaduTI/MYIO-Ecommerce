@@ -23,7 +23,7 @@ class Profile(models.Model):
     city = models.CharField(max_length=30, verbose_name='Cidade')
     state = models.CharField(
         verbose_name='Estado',
-        max_lenght=2,
+        max_length=2,
         default='SP',
         choices=(
             ('AC', 'Acre'),

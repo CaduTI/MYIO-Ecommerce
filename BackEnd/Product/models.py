@@ -9,19 +9,23 @@ from utils import utils
 
 # Create your models here.
 class Product(models.Model):
-    id = models.SlugField
-    name = models.CharField(max_length=255)
-    type_product = models.CharField(default='V',
-                                    max_length=1,
-                                    choices=(
-                                        ('V', 'variation'),
-                                        ('S', 'simple'),
-                                    )
-                                    )
-    price = models.FloatField
-    description = models.TextField
-    image_product = models.ImageField(
-        upload_to='product_images/%Y/%m/', blank=True, null=True)
+    nome = models.CharField(max_length=255)
+    descricao_curta = models.CharField(max_length=255)
+    descricao_longa = models.TextField()
+    imagem = models.ImageField(
+        upload_to='produto_imagens/%Y/%m/', blank=True, null=True)
+    slug = models.SlugField(unique=True, blank=True, null=True)
+    preco_marketing = models.FloatField(verbose_name='Preço')
+    preco_marketing_promocional = models.FloatField(
+        default=0, verbose_name='Preço Promo.')
+    tipo = models.CharField(
+        default='V',
+        max_length=1,
+        choices=(
+            ('V', 'Variável'),
+            ('S', 'Simples'),
+        )
+    )
 
     def get_preco_formatado(self):
         return utils.formata_preco(self.preco_marketing)

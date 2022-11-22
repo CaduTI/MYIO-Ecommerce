@@ -1,32 +1,56 @@
 $roxo: #6c25be;
+$verde: #03C376;
+$branco: #ffffff;
 
+*{
+  margin: 0px;
+  padding: 0;
+  text-decoration: none;
+}
 
+.cabeçalho{
+  background: $roxo;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+}
 
 .topo{
-  background: $roxo;
-  height: 150px;
+ height: 10;
+ margin: 0px;
 }
 
 .logo{
-
+  max-width: 200px;
   margin-left: 2% ;
-  margin-top: 40px;
-  margin-right: 30%;
-
-}
-.personagem{
-
-  margin-top: 40px;
-  margin-left: 20%;
-
+  margin-right: 20%;
+  vertical-align: top;
+  cursor: pointer;
 }
 
 .pesquisa{
-  display: flex;
-  display: inline;
-  margin-top: 10px;
+
   width: 400px;
   height: 30px;
+}
+
+.login{
+}
+
+.login, .cadastro {
+  padding: 5px;
+  color: $branco;
+}
+
+.carrinho{
+  cursor: pointer;
+}
 
 
+.verde{
+  background: $verde;
+  color: $verde;
+  margin-top: 0;
 }

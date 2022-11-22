@@ -1,15 +1,24 @@
-
-
 <body>
-  <ul class="topo">
-    <img src="../assets/home_FILL0_wght400_GRAD0_opsz48.png" class="logo">
+  <header class="cabeçalho">
+    <nav [routerLink]="['']" class="topo">
+      <img src="../assets/Logomyio.png" class="logo">
+    </nav>
+    <nav>
+      <input type="text" class="pesquisa" placeholder="Pesquisar">
+    </nav>
+    <nav >
+      <img src="../assets/person_FILL0_wght400_GRAD0_opsz48.svg" class="personagem">
+        <a href="./login" class="login"> Login</a>
+        <a href="./create-account" class="cadastro"> Cadastre-se</a>
+      </nav>
+    <nav [routerLink]="['./shopping-cart']">
+      <img src="../assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" class="carrinho">
+    </nav>
+  </header>
 
-
-    <input type="text" class="pesquisa" placeholder="Pesquisar">
-
-
-    <img src="../assets/account_circle_FILL0_wght400_GRAD0_opsz48.png" class="personagem">
-  </ul>
+  <div class="verde">
+    f
+  </div>
 
   <td>
     <router-outlet></router-outlet>

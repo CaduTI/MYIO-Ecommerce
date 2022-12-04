@@ -1,13 +1,44 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <title>Front</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerce Myio</title>
 </head>
 <body>
-  <app-root></app-root>
+    <div class="conteiner">
+        <div class="product">
+            <div class="image">
+                <img class="product-image" src="imagem alexia amazon-100.jpg" alt="imagem da smart speaker"
+            </div>
+            <div class="color">
+                <span class="grey active" data-image="images/grey.jpg" data-color="#DCDCDC"></span>
+            </div>
+            <div class="title">
+                Smart Speaker Amazon com Alexa - ECHO DOT 3ª Geração
+            </div>
+            <div class="detail">
+                <p>R$ 199,99 : <span>R$ 175,10 </span> : <span>À vista no PIX <span> Ou Em 10x de R$ <span> 19,99 sem juros no cartão</span></p>
+                <a href="#">ADICIONAR AO CARRINHO</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script>
+      $(".color span").click(function(){
+        $(".color span").removeClass("active");
+        $(this).addClass("active");
+        $(".detail span").css("color",$(this).attr("data-color"));
+        $("detail a").css("background",$(this).attr("data-color"));
+        $(".product-image").attr("src",$(this).attr("data-image"));
+        $("body").css("background",$(this).attr("data-color"));
+      });   
+      </script>
 </body>
 </html>

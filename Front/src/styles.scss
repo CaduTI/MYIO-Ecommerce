@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.google.com/specimen/Roboto?thickness=6&slant=1");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #DCDCDC;
+}
+
+.container{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .product{
+    background:#DCDCDC;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container .product .image{
+    width: 300px;
+    height: 150px;
+    margin: auto;
+}
+
+.container .product .image .product-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.8s linear;
+}
+
+    .container .product .color{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        justify-content: center;
+    }
+
+    .container .product .color .span{
+        width: 15px;
+        height: 15px;
+        margin: 0 15px;
+        border-radius: 50px;
+        background:#00FF00;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .container .product .color .grey{
+        background: #555555;
+    }
+    .container .product .color .active::after{
+        content: " ";
+        width: 17px;
+        height: 17px;
+        border: 2px solid #333;
+        position: absolute;
+        border-radius: 50%;
+        left: -3px;
+        top: -3px;
+    }
+    .container .product .title{
+        font-size: 22px;
+        text-align: center;
+    }
+    .container .product .detail{
+        text-align: center;
+    }
+
+    .container .product .detail p{
+        font-size: 25px;
+        margin: 15px;
+    }
+
+    .container .product .detail p span{
+        color: #555555;
+    }
+
+    .container .product .detail a{
+        text-decoration: none;
+        background: #555555;
+        border-radius: 8px;
+        color: white;
+        margin: 15px;
+        padding: 8px 45px;
+    }
